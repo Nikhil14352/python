@@ -1,3 +1,4 @@
+#MEMBERSHIP OPERATOR
 str="nikhil"
 str1="nithin"
 str2="neeraj"
@@ -20,4 +21,115 @@ b= "i am spider man"
 c= "i am superman"
 print(a in b)
 print(b in a)
-print(a in a)
+print(a not in a)
+
+
+print("------------------------------------------")
+
+# compare of two strings
+
+a="nikhil"
+b="neeraj"
+print(a>b)
+print(b>a)
+
+s=("$nikhil")
+s1=("*srinija")
+print(s==s1)
+print(s<=s1)
+
+sa="1 3 4"
+sb="2 3 6"
+print(sa>=sb)
+print(sb>sa)
+
+print("---------------------------------")
+#find the substring using find( it will show first occurence)
+
+str= "hello my name is maximus derimous python"
+print(str.find('name'))
+str= "hello my name is maximus derimous python"
+print(str.find('m'))
+str= "hello my name is maximus derimous python"
+print(str.find('python'))
+
+print("--------------------------------------")
+
+#find the substring using rfind(it will show last occurence)
+
+str= "hello my name is maximus derimous python"
+print(str.rfind('name'))
+str= "hello my name is maximus derimous python"
+print(str.rfind('m'))
+str= "hello my name is maximus derimous python"
+print(str.rfind('python'))
+
+print("-----------------------------------------")
+
+#find the substring using index
+
+str= "hello my name is maximus derimous python"
+print(str.index('name'))
+str= "hello my name is maximus derimous python"
+print(str.index('m'))
+str= "hello my name is maximus derimous python"
+print(str.index('python'))
+
+print("-------------------------------------------")
+
+# find the substring of rindex
+str= "hello my name is maximus derimous python"
+print(str.rindex('name'))
+str= "hello my name is maximus derimous python"
+print(str.rindex('m'))
+str= "hello my name is maximus derimous python"
+print(str.rindex('python'))
+
+print("-------------------------------------------")
+
+#replace the string using replace method
+
+str="i am bad at python"
+print(str.replace("bad","good"))
+
+str="iam not intelligent"
+print(str.replace("not intelligent"," intelligent"))
+
+str="iam cricket player"
+print(str.replace('cricket','football'))
+
+print('-----------------------------------')
+
+list= ["nikhil","madhav","harini"]
+s= ":" .join(list)
+print(s)
+
+tuple=("harshith","nikhil","neeraj")
+s="-".join(tuple)
+print(s)
+
+set={"name":"nikhil","id":"1234"}
+s="-".join(set)
+print(s)
+
+print("----------------------------------------")
+
+#removing spaces from string using strip
+
+s=" iam from telangana state "
+print(len(s))
+after_strip=s.strip()
+print(after_strip)
+print(len(after_strip))
+
+s="  iam from karnataka  "
+print(len(s))
+after_strip=s.rstrip()
+print(after_strip)
+print(len(after_strip))
+
+s=" iam from karnataka "
+after_strip=s.lstrip()
+print(after_strip)
+
+
