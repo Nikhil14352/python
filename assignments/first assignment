@@ -1,0 +1,23 @@
+str="nikhil"
+str1="nithin"
+str2="neeraj"
+str3="nithin"
+print(str in str2)
+print(str not in str3)
+print(str2 in str)
+
+
+s="1 2 3"
+s1="2 5 4"
+s2="6 4 7"
+print(s in s1)
+print(s2 not in s)
+print(s1 in s)
+print(s in s2)
+
+a= "i am groot"
+b= "i am spider man"
+c= "i am superman"
+print(a in b)
+print(b in a)
+print(a in a)
