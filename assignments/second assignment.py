@@ -28,6 +28,8 @@ else:
 
 #print("--------------------------------------------")
 
+#replace given string in a charcter 
+
 re_string=input("enter any str:")
 char=input("enter the char:")
 replace_string=re_string.replace("char"," ")
@@ -67,7 +69,35 @@ print(replace_string)
 a=int(input("enter any number"))
 b=int(input("enter any number"))
 sum=a+b
-print=("sum",sum)
+print("sum",sum)
+
+#print(---------------------------)
+# remove repeated characters in string
+
+string=input("enter the str=")
+p=""
+for char in string:
+    if char not in p:
+        p=p+char
+print(p)
+
+#print("--------------------------------")
+
+#count occurance of a given string
+
+string=input("enter str_1:")
+char=input("enter str_2:")
+char_count=string.count(char)
+print(char_count)
+
+#print("--------------------------------")
+
+#to check string anagrams or not
+
+
+
+
+
 
 
     
