@@ -93,6 +93,18 @@ print(char_count)
 #print("--------------------------------")
 
 #to check string anagrams or not
+string1=("enter str1:")
+string2=("enter str2")
+if len(string1)!=len(string2):
+    print("not anagrams")
+else:
+    if sorted(string1)==sorted(string2):
+        print("this is anagrams")
+    else:
+        print("not anagarams")
+
+
+    
 
 
 
