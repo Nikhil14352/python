@@ -4,7 +4,7 @@ char=input("given char")
 remove_char=str.replace(char,"")
 print(remove_char)
 
-#print("---------------------------------------")
+#print("--------------------------------------------")
 
 # To check pallindrome or not
 string_poly=input("enter any character=")
@@ -15,7 +15,7 @@ else:
     print("given string is not a pallindrome")
 
 
-#print("-----------------------------------------")
+#print("----------------------------------------------")
  
   #to check given character is vowel or cosonent
  
@@ -26,7 +26,7 @@ if char==vowels:
 else:
     print("the not vowels or consonents")
 
-#print("--------------------------------------------")
+#print("------------------------------------------------")
 
 #replace given string in a charcter 
 
@@ -35,13 +35,12 @@ char=input("enter the char:")
 replace_string=re_string.replace("char"," ")
 print(replace_string)
 
-#print("--------------------------------")
+#print("-------------------------------------------------")
 
 #count numbers, alphabets, special character in string
 string=input("enter any string")
 digits=0
 alphabets=0
-letters=0
 special_character=0
 for i in string:
     if i.isdigit():
@@ -54,7 +53,7 @@ print(alphabets)
 print(digits)
 print(special_character)
 
-#print("----------------------------------")
+#print("------------------------------------------------")
 
 # remove spaces between the characters in a string
 
@@ -62,7 +61,7 @@ space_string=input("enter any character:")
 replace_string=space_string.replace(" ","")
 print(replace_string)
 
-#print("---------------------------------------")
+#print("----------------------------------------------------")
 
 #find sum of integers in a string
 
@@ -71,7 +70,7 @@ b=int(input("enter any number"))
 sum=a+b
 print("sum",sum)
 
-#print(---------------------------)
+#print(-------------------------------------------------)
 # remove repeated characters in string
 
 string=input("enter the str=")
@@ -81,7 +80,7 @@ for char in string:
         p=p+char
 print(p)
 
-#print("--------------------------------")
+#print("-----------------------------------------------------")
 
 #count occurance of a given string
 
@@ -90,7 +89,7 @@ char=input("enter str_2:")
 char_count=string.count(char)
 print(char_count)
 
-#print("--------------------------------")
+#print("-----------------------------------------------")
 
 #to check string anagrams or not
 string1=("enter str1:")
@@ -101,7 +100,7 @@ else:
     if sorted(string1)==sorted(string2):
         print("this is anagrams")
     else:
-        print("not anagarams")
+        print("not anagrams")
 
 
     
