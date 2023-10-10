@@ -21,9 +21,9 @@ print(sum([5,7,6,8,9]))
 def factorial(x):
     if x==1:
         return 1
-    else:
+    else:                 
         return x * factorial(x-1)
-print(factorial(3000))                 #OP:maximum recursion depth exceeded
+print(factorial(3000))#OP:maximum recursion depth exceeded
 
 #lamda function
 x=lambda a: a+10
@@ -32,8 +32,17 @@ print(x(5))
 x=lambda a,b:a**b
 print(f'square of x is{x(5,6)}')
 
-x=lambda num: num*5
-print(x(5))
+a=int(input("enter any value:"))
+b=int(input("enter any value:"))
+s=lambda a,b,c: a*b*c
+print('mul=',mul)
+
+
+
+a=int(input("enter any value:"))
+b=int(input("enter any value:"))
+s=lambda a,b: a+b
+print('sum=',sum)
 
 #Filter() Functions
 

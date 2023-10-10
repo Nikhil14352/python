@@ -1,0 +1,98 @@
+def clac(a,b,c):
+    sum=a+b+c
+    sub=a-b-c
+    mul=a*b*c
+    div=a/b
+    return("sum:",sum,"sub:",sub,"mul:",mul,"div:",div)
+a=int(input("enter any number:"))
+b=int(input("enter any number:"))
+c=int(input("enter any number:"))
+d=clac(a,b,c)
+print(d)
+
+#def add(*emp_list):
+#    dict={}
+#    emp_name=input("enter any name:")
+#    emp_id=input("enter any id:")
+ #   emp_email=input("enter any email")
+#    emp_designation=input("enter any designation")
+
+# Initialize an empty list to store employee details
+employee_database = []
+
+# Function to add employee details
+def add_employee():
+    print("Enter employee details:")
+    name = input("Name: ")
+    emp_id = input("Employee ID: ")
+    designation = input("Designation: ")
+    email = input("Email: ")
+
+    employee = {
+        "Name": name,
+        "Employee ID": emp_id,
+        "Designation": designation,
+        "Email": email
+    }
+
+    employee_database.append(employee)
+    print("Employee details added successfully!")
+
+# Function to filter and display employee details
+def filter_employee():
+    print("Filter options:")
+    print("1. Filter by Name")
+    print("2. Filter by Employee ID")
+    print("3. Filter by Designation")
+    print("4. Filter by Email")
+    choice = input("Enter your choice (1/2/3/4): ")
+
+    filter_key = ""
+    filter_value = input("Enter the filter value: ")
+
+    if choice == "1":
+        filter_key = "Name"
+    elif choice == "2":
+        filter_key = "Employee ID"
+    elif choice == "3":
+        filter_key = "Designation"
+    elif choice == "4":
+        filter_key = "Email"
+    else:
+        print("Invalid choice!")
+        return
+
+    filtered_employees = [employee for employee in employee_database if filter_value.lower() in employee[filter_key].lower()]
+
+    if len(filtered_employees) == 0:
+        print("No matching employees found.")
+    else:
+        print("Matching Employees:")
+        for employee in filtered_employees:
+            print("Name:", employee["Name"])
+            print("Employee ID:", employee["Employee ID"])
+            print("Designation:", employee["Designation"])
+            print("Email:", employee["Email"])
+            print("-" * 20)
+
+# Main program loop
+while True:
+    print("\nEmployee Management System")
+    print("1. Add Employee")
+    print("2. Filter Employee")
+    print("3. Exit")
+    choice = input("Enter your choice (1/2/3): ")
+
+    if choice == "1":
+        add_employee()
+    elif choice == "2":
+        filter_employee()
+    elif choice == "3":
+        print("Exiting program.")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+
+
+
+        
