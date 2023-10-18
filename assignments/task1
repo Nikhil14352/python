@@ -1,3 +1,4 @@
+#caluculater
 def clac(a,b,c):
     sum=a+b+c
     sub=a-b-c
@@ -10,12 +11,7 @@ c=int(input("enter any number:"))
 d=clac(a,b,c)
 print(d)
 
-#def add(*emp_list):
-#    dict={}
-#    emp_name=input("enter any name:")
-#    emp_id=input("enter any id:")
- #   emp_email=input("enter any email")
-#    emp_designation=input("enter any designation")
+#employee details
 
 # Initialize an empty list to store employee details
 employee_database = []
