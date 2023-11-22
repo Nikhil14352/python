@@ -60,3 +60,21 @@ while(num>0):
     num=num//10
     if num==0:
         print("num is binary")
+
+# checking even or odd numbers
+
+num = int(input("enter any number to check even or odd:"))
+if num%2 == 0:
+    print("its even")
+else:
+    print("its odd")
+
+# calculate the power using for-loop
+
+base=int(input('enter the base value:'))
+exponent=int(input("enter the exponent value:"))
+result=1
+print(base,"to power",exponent,'=',end='')
+for exponent in range(exponent,0,-1):
+     result*=base
+print(result)
